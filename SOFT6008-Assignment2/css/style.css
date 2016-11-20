@@ -20,12 +20,81 @@
    /* padding: 5px;*/
 }
 
-.imagesize{
-    
+#mainimage{
     margin: 10px;
     border: 2px solid #ccc;
-    width: 95%;    
+    position: relative;
+    width: 100%px;
 }
+
+#pizza{
+    width: 100%;   
+}
+
+/*#cheesetopping{
+    position: absolute;
+    bottom: 200px;
+    right: 300px;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    opacity: 0.5;
+    clip: rect(110px, 160px, 170px, 60px);
+}*/
+
+#cheesetopping{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+#hamtopping{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    opacity: 1.0;
+}
+
+#mushroomtopping{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    opacity: 1.0;
+}
+
+#oniontopping{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    opacity: 1.0;
+}
+
+
+#chickentopping{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    opacity: 1.0;
+}
+
+
+
 
 
 header {

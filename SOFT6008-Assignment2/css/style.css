@@ -13,11 +13,9 @@
 }
 
 .main {
-    /* text-align: left; */
     border: 1px solid #ddd;
     border-radius: 4px;
     vertical-align: middle;
-   /* padding: 5px;*/
 }
 
 #mainimage{
@@ -27,74 +25,41 @@
     width: 100%px;
 }
 
-#pizza{
-    width: 100%;   
-}
+#pizza{width: 100%;}
 
-/*#cheesetopping{
-    position: absolute;
-    bottom: 200px;
-    right: 300px;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    opacity: 0.5;
-    clip: rect(110px, 160px, 170px, 60px);
-}*/
+#cheesetopping{position: absolute; bottom: 0%; right: 0%; width: 100%; height: 100%; border-radius: 50%; opacity: 0.8; visibility: hidden;}
 
-#cheesetopping{
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    opacity: 0.8;
-}
+#hamtopping{position: absolute; top: 32%; right: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
-#hamtopping{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
-    opacity: 1.0;
-}
+#hamtopping2{position: absolute; top: 32%; left: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
-#mushroomtopping{
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
-    opacity: 1.0;
-}
+#hamtopping3{position: absolute; bottom: 15%; right: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
-#oniontopping{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
-    opacity: 1.0;
-}
+#hamtopping4{position: absolute; bottom: 15%; left: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
+#oniontopping{position: absolute; top: 32%; right: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
-#chickentopping{
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
-    opacity: 1.0;
-}
+#oniontopping2{position: absolute; top: 15%; right: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
+#oniontopping3{position: absolute; top: 32%; left: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
+#oniontopping4{position: absolute; bottom: 32%; left: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
+#mushroomtopping{position: absolute; bottom: 15%; right: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
+
+#mushroomtopping2{position: absolute; top: 15%; right: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
+
+#mushroomtopping3{position: absolute; top: 15%; left: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
+
+#mushroomtopping4{position: absolute; bottom: 15%; left: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
+
+#chickentopping{position: absolute; bottom: 32%; right: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
+
+#chickentopping2{position: absolute; bottom: 32%; right: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
+
+#chickentopping3{position: absolute; top: 15%; left: 30%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
+
+#chickentopping4{position: absolute; bottom: 32%; left: 10%; width: 15%; height: 15%; border-radius: 50%; opacity: 0.7; visibility: hidden;}
 
 
 header {

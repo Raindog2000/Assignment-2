@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Phillip Rooney - R00107018 -->
+<!-- SOFT6008 Assignment 2 -->
+
+<html lang="en">
+
+	<head>
+		<meta charset = "utf-8">
+		<title>Pizza Factory</title>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+
+	<body>
+		<div class="flex-container">
+
+		<header><strong>The <em>Pizza</em> Factory</strong></header>
+		
+		<nav class="nav">
+			<form name="orderForm" action="http://atlantis.cit.ie/displayvalues.php" method="post">
+				<H2><strong>Create your own Pizza</strong></H2>
+				<fieldset>
+					<legend>Please enter your personal details</legend>
+						<p>
+							<label>First Name:</label>
+							<input autocomplete="on" type="text" name="firstName" placeholder="First Name" required><!-- set as required -->
+						</P>
+
+						<p>
+							<label>Last Name:</label>
+							<input autocomplete="on" type="text" name="lastName" placeholder="Last Name" required><!-- set as required -->
+						</P>
+
+						<P>
+							<label>Email address</label>
+							<input required autocomplete="on" type="email" placeholder="Joe.Bloggs@gmail.com" name="email"><!-- set as required -->
+						</p>			
+				</fieldset>
+
+				<br/>
+
+				<fieldset>
+					<legend>What size Pizza would you like?</legend>
+						<p>
+							<input id="sSize" name="size" type="radio" value="Small" required>7 inch (small)<br/><!-- set as required to ensure one button must be selected -->
+							<input id="mSize" name="size" type="radio" value="Medium" >9 inch (medium)<br/>
+							<input id="lSize" name="size" type="radio" value="Large" >12 inch (large)<br/>
+						</p>
+				</fieldset>
+
+				<br/>
+
+				<fieldset>
+					<legend>Choose your toppings</legend>
+						<p>	
+							<input id="cheese" name="Cheese_Top" type="checkbox" value="Yes" >Cheese €0.50
+							<input id="cheeseHidden" name="Cheese_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
+							<input id="onions" name="Onion_Top" type="checkbox" value="Yes" >Onions €0.50
+							<input id="onionsHidden" name="Onion_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
+							<input id="ham" name="Ham_Top" type="checkbox" value="Yes" >Ham €0.75
+							<input id="hamHidden" name="Ham_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
+							<input id="chicken" name="Chicken_Top" type="checkbox" value="Yes" >Chicken €0.75
+							<input id="chickenHidden" name="Chicken_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
+							<input id="shrooms" name="Mushrooms_Top" type="checkbox" value="Yes" >Mushrooms €0.50
+							<input id="shroomsHidden" name="Mushrooms_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
+						</p>
+				</fieldset>
+
+				<br/>
+
+				<fieldset>
+					<legend>Please enter your payment details</legend>
+						<p>
+							<label>Credit/Debit Card Number:</label>
+							<input autocomplete="on" type="text" name="creditCard" placeholder="Enter 16 digit card number" required><!-- set as required -->
+						</P>
+
+						<p>
+							<label>Expiry Date:</label>
+							<input autocomplete="on" type="text" name="expDate" placeholder="DD MM" required><!-- set as required -->
+						</P>
+
+						<P>
+							<label>Security Code:</label>
+							<input autocomplete="on" type="text" name="securityCode" placeholder="Enter 3 digit security code" required><!-- set as required -->
+						</p>			
+				</fieldset>
+
+			</form>
+		</nav>
+
+		<main class="main">
+
+			<img class="imagesize" src='images/Pizza.jpg' alt="Pizza Base">
+		  
+		</main>
+
+		<footer><small>Assignment 2 - Phillip Rooney - R00107018 - Date submitted 27th Nov 2016</small></footer>
+		</div>
+
+		<script type="text/javascript" src="js/calculate.js"></script>
+
+    </body>
+
+</html>

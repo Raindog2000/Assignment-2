@@ -41,9 +41,9 @@
 				<fieldset>
 					<legend>What size Pizza would you like?</legend>
 						<p>
-							<input id="sSize" name="size" type="radio" value="Small" required>7 inch (small)<br/><!-- set as required to ensure one button must be selected -->
-							<input id="mSize" name="size" type="radio" value="Medium" >9 inch (medium)<br/>
-							<input id="lSize" name="size" type="radio" value="Large" >12 inch (large)<br/>
+							<input id="sSize" name="size" type="radio" value="Small" required>7 inch (small) €7.99<br/><!-- set as required to ensure one button must be selected -->
+							<input id="mSize" name="size" type="radio" value="Medium" >9 inch (medium) €9.99<br/>
+							<input id="lSize" name="size" type="radio" value="Large" >12 inch (large) €12.99<br/>
 						</p>
 				</fieldset>
 
@@ -54,14 +54,19 @@
 						<p>	
 							<input id="cheese" name="Cheese_Top" type="checkbox" value="Yes" >Cheese €0.50
 							<input id="cheeseHidden" name="Cheese_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
-							<input id="onions" name="Onion_Top" type="checkbox" value="Yes" >Onions €0.50
+							<input id="onions" name="Onion_Top" type="checkbox" value="Yes" >Onions €0.75
 							<input id="onionsHidden" name="Onion_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
-							<input id="ham" name="Ham_Top" type="checkbox" value="Yes" >Ham €0.75
+							<input id="ham" name="Ham_Top" type="checkbox" value="Yes" >Ham €1.00
 							<input id="hamHidden" name="Ham_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
-							<input id="chicken" name="Chicken_Top" type="checkbox" value="Yes" >Chicken €0.75
+							<input id="chicken" name="Chicken_Top" type="checkbox" value="Yes" >Chicken €1.00
 							<input id="chickenHidden" name="Chicken_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
-							<input id="shrooms" name="Mushrooms_Top" type="checkbox" value="Yes" >Mushrooms €0.50
+							<input id="shrooms" name="Mushrooms_Top" type="checkbox" value="Yes" >Mushrooms €0.75
 							<input id="shroomsHidden" name="Mushrooms_Top" type="hidden" value="No"><br/><!-- hidden checkbox used to pass values for unchecked boxes-->
+						</p>
+
+						<p>
+							<label>Total Price: € </label><!-- read only total price -->
+							<input Name="Total_Price" type="text" id="getCost" readonly>
 						</p>
 				</fieldset>
 
@@ -71,7 +76,7 @@
 					<legend>Please enter your payment details</legend>
 						<p>
 							<label>Credit/Debit Card Number:</label>
-							<input autocomplete="on" type="text" name="creditCard" placeholder="Enter 16 digit card number" required><!-- set as required -->
+							<input autocomplete="on" type="text" name="creditCard" placeholder="16 digit card number" required><!-- set as required -->
 						</P>
 
 						<p>
@@ -81,8 +86,12 @@
 
 						<P>
 							<label>Security Code:</label>
-							<input autocomplete="on" type="text" name="securityCode" placeholder="Enter 3 digit security code" required><!-- set as required -->
-						</p>			
+							<input autocomplete="on" type="text" name="securityCode" placeholder="3 digit security code" required><!-- set as required -->
+						</p>		
+
+						<button type="submit">
+							<img src="images/Order.jpg" alt="Click to Submit" width="100" height="49"/>
+						</button>	
 				</fieldset>
 
 			</form>
@@ -90,13 +99,32 @@
 
 		<main class="main">
 
-			<img class="imagesize" src='images/Pizza.jpg' alt="Pizza Base">
-		  
-		</main>
+			<div id="mainimage">
+				<img id="pizza" src='images/Pizza.jpg' alt="Pizza Base">
+				<img id="cheesetopping" src='images/Cheese.jpg' alt="Cheese">
+				<img id="hamtopping" src='images/Ham.jpg' alt="Ham"> <!-- multiple versions of each topping to give scattered effect on Pizza -->
+				<img id="hamtopping2" src='images/Ham.jpg' alt="Ham">
+				<img id="hamtopping3" src='images/Ham.jpg' alt="Ham">
+				<img id="hamtopping4" src='images/Ham.jpg' alt="Ham">
+	 			<img id="mushroomtopping" src='images/Mushroom.jpg' alt="Mushrooms">
+	 			<img id="mushroomtopping2" src='images/Mushroom.jpg' alt="Mushrooms">
+	 			<img id="mushroomtopping3" src='images/Mushroom.jpg' alt="Mushrooms">
+	 			<img id="mushroomtopping4" src='images/Mushroom.jpg' alt="Mushrooms">
+				<img id="oniontopping" src='images/Onion.jpg' alt="Onions">
+				<img id="oniontopping2" src='images/Onion.jpg' alt="Onions">
+				<img id="oniontopping3" src='images/Onion.jpg' alt="Onions">
+				<img id="oniontopping4" src='images/Onion.jpg' alt="Onions">
+				<img id="chickentopping" src='images/Chicken.jpg' alt="Chicken">
+				<img id="chickentopping2" src='images/Chicken.jpg' alt="Chicken">
+				<img id="chickentopping3" src='images/Chicken.jpg' alt="Chicken">
+				<img id="chickentopping4" src='images/Chicken.jpg' alt="Chicken">
+			</div>		  
 
-		<footer><small>Assignment 2 - Phillip Rooney - R00107018 - Date submitted 27th Nov 2016</small></footer>
+		</main>
+		
 		</div>
 
+		<footer><small>Assignment 2 - Phillip Rooney - R00107018 - Date submitted 27th Nov 2016</small></footer>
 		<script type="text/javascript" src="js/calculate.js"></script>
 
     </body>
